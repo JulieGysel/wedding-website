@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+
+
+
+    --color-primary-50: #fff;
+    --color-primary-100: #ddeaf5;
+    --color-primary-200: #b6d3e9;
+    --color-primary-300: #8fbbdd;
+    --color-primary-400: #67a3d2;
+    --color-primary-500: #408bc6;
+    --color-primary-600: #3070a3;
+    --color-primary-700: #25557b;
+    --color-primary-800: #193a54;
+    --color-primary-900: #0d1f2d;
+    --color-primary-950: #020405;
+
+    --font-sans: "Montserrat", sans-serif;
+    --font-display: "Tangerine", cursive;
+}
+
+a:hover {
+    text-decoration: underline;
+}
