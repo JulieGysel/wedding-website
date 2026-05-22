@@ -1,25 +1,96 @@
 @import "tailwindcss";
 
 @theme {
+  --color-primary-50: #fff;
+  --color-primary-100: #ddeaf5;
+  --color-primary-200: #b6d3e9;
+  --color-primary-300: #8fbbdd;
+  --color-primary-400: #67a3d2;
+  --color-primary-500: #408bc6;
+  --color-primary-600: #3070a3;
+  --color-primary-700: #25557b;
+  --color-primary-800: #193a54;
+  --color-primary-900: #0d1f2d;
+  --color-primary-950: #020405;
 
+  --font-sans: "Montserrat", sans-serif;
+  --font-display: "Tangerine", cursive;
 
+  --animate-bg: bg 10s ease-in-out infinite;
+  @keyframes bg {
+    25% {
+      filter: hue-rotate(-30deg);
+    }
+    50% {
+      filter: hue-rotate(0deg);
+    }
+    75% {
+      filter: hue-rotate(30deg);
+    }
+  }
+}
 
-    --color-primary-50: #fff;
-    --color-primary-100: #ddeaf5;
-    --color-primary-200: #b6d3e9;
-    --color-primary-300: #8fbbdd;
-    --color-primary-400: #67a3d2;
-    --color-primary-500: #408bc6;
-    --color-primary-600: #3070a3;
-    --color-primary-700: #25557b;
-    --color-primary-800: #193a54;
-    --color-primary-900: #0d1f2d;
-    --color-primary-950: #020405;
+.flower-title {
+  margin-left: 3rem;
+}
 
-    --font-sans: "Montserrat", sans-serif;
-    --font-display: "Tangerine", cursive;
+.flower-title::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  background-image: url("/img/flower.png");
+  background-size: cover;
+  position: relative;
+  top: calc(var(--text-lg) + 1.5rem / 3);
+  left: -2rem;
+}
+
+@keyframes spin-30 {
+  to {
+    transform: rotate(390deg);
+  }
+}
+
+.flower-title.rot-30::before {
+  transform: rotate(30deg);
+  animation: spin-30 15s linear infinite;
+}
+
+@keyframes spin-60 {
+  to {
+    transform: rotate(420deg);
+  }
+}
+
+.flower-title.rot-60::before {
+  transform: rotate(60deg);
+  animation: spin-60 15s linear infinite;
+  filter: hue-rotate(140deg);
+}
+
+@keyframes spin-90 {
+  to {
+    transform: rotate(420deg);
+  }
+}
+
+.flower-title.rot-90::before {
+  transform: rotate(90deg);
+  animation: spin-90 15s linear infinite;
+
+  filter: hue-rotate(270deg);
+}
+
+a {
+  color: var(--color-primary-600);
+}
+
+a.text-white {
+  color: var(--color-white);
+  text-decoration: underline;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }

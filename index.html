@@ -1,122 +1,191 @@
 <!doctype html>
 <html>
+  <head>
+    <title>Julie & Ondřej</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
 
-<head>
-  <title>Julie & Ondřej</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
-    rel="stylesheet">
+  <body>
+    <!-- <div class="min-h-screen w-full flex xl:flex-row flex-col"> -->
+    <div
+      class="xl:h-screen md:overflow-hidden w-full flex flex-col xl:flex-row"
+    >
+      <!-- header -->
+      <div
+        class="xl:h-screen xl:w-1/2 w-full flex p-8 bg-primary-500 text-white"
+      >
+        <div class="w-full flex flex-col justify-between">
+          <div class="">
+            <img class="w-1/4 animate-bg" src="/img/flowers.png" alt="" />
+          </div>
 
-  <link rel="stylesheet" href="style.css">
-</head>
+          <div
+            class="flex flex-center justify-center items-center text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl"
+          >
+            <div class="h-fit text-right text-shadow-md">
+              Julie<br />Gyselová
+            </div>
+            <div
+              class="h-fit text-center font-display mx-4 text-[400%] text-shadow-md"
+            >
+              &
+            </div>
+            <div class="h-fit text-left text-shadow-md">Ondřej<br />Soukup</div>
+          </div>
 
-<body>
-  <div class="min-h-screen w-full flex xl:flex-row flex-col">
+          <div class="flex justify-end">
+            <img
+              class="w-1/4 rotate-180 animate-bg"
+              src="/img/flowers.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
 
-    <!-- header -->
-    <div class="xl:w-1/2 w-full flex p-8 bg-radial-[at_50%_15%] from-primary-400 to-primary-600 text-white">
-      <div class="w-full flex flex-col justify-between">
-        <div class="">
-          <img class="w-1/4" src="/img/flower.png" alt="">
+      <!-- right -->
+      <div
+        class="xl:h-screen xl:overflow-auto scrollbar-thumb-primary-200 xl:w-1/2 w-full p-2 md:p-8 pl-2 md:pl-4 flex flex-col"
+      >
+        <!-- info -->
+        <div class="flower-title rot-30">
+          <h2 class="text-lg font-medium flex">
+            Základní informace o naší svatbě
+          </h2>
+
+          <div class="mt-4">
+            <table class="">
+              <tr>
+                <td class="font-medium pr-4 align-baseline">Datum</td>
+                <td>29. 8. 2026</td>
+              </tr>
+              <tr>
+                <td class="font-medium pr-4 align-baseline">Čas obřadu</td>
+                <td>
+                  11:00<br />
+                  (příjezd hostů mezi 10:00 a 10:30)
+                </td>
+              </tr>
+              <tr>
+                <td class="font-medium pr-4 align-baseline">Místo</td>
+                <td>
+                  <a
+                    href="https://maps.app.goo.gl/mYZy1pK4osCnAMda6"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Holenský dvůr</a
+                  >
+                </td>
+              </tr>
+            </table>
+
+            <p class="bg-primary-500 text-white p-4 mt-4 rounded-sm">
+              Prosíme o potvrzení účasti vyplněním našeho
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer"
+                class="font-medium text-white"
+                >online formuláře</a
+              >.
+            </p>
+          </div>
         </div>
 
-        <div
-          class="flex flex-center justify-center items-center text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl">
-          <div class="h-fit text-right">Julie<br>Gyselová</div>
-          <div class="h-fit text-center font-display mx-4 text-[400%]">&</div>
-          <div class="h-fit text-left">Ondřej<br>Soukup</div>
+        <!-- ubytování -->
+        <div class="flower-title rot-60">
+          <h2 class="text-lg font-medium flex">Ubytování</h2>
+
+          <div class="">
+            <p>
+              Ubytování je možné na místě v
+              <a
+                href="https://holensky-dvur.cz/ubytovani-2/"
+                target="_blank"
+                class="text-primary-600"
+                >2-6 lůžkových pokojích</a
+              >.
+            </p>
+
+            <p>
+              Těm, kteří to k nám mají daleko, nabízíme možnost se ubytovat již
+              od pátku 28. 8.
+            </p>
+
+            <p class="font-medium mt-2">
+              V případě zájmu o ubytování nám dejte vědět v registračním
+              formuláři.
+            </p>
+          </div>
         </div>
 
-        <div class="flex justify-end">
-          <img class="w-1/4 rotate-180" src="/img/flower.png" alt="">
+        <!-- Jídlo -->
+        <div class="flower-title rot-90">
+          <h2 class="text-lg font-medium flex">Jídlo</h2>
+
+          <div class="">
+            <p>
+              Jídlo na svatbě bude formou bufetu. Pokud máte speciální dietní
+              požadavky, dejte nám vědět ve formuláři.
+            </p>
+          </div>
+        </div>
+
+        <!-- dress code -->
+        <div class="flower-title rot-60">
+          <h2 class="text-lg font-medium flex">Dress code</h2>
+
+          <div class="">
+            <p>Casual.</p>
+            <p>
+              <span class="italic">Vysvětleno</span>: slušné kalhoty a košile
+              (na sakách a kravatách netrváme) nebo letní šaty (ne bílé barvy).
+            </p>
+          </div>
+        </div>
+
+        <!-- dary -->
+        <div class="flower-title rot-30">
+          <h2 class="text-lg font-medium flex">Dary</h2>
+
+          <div class="">
+            <p>Více než hmotné dary oceníme příspěvek na svatbu.</p>
+          </div>
+        </div>
+
+        <!-- program -->
+        <div class="flower-title rot-90">
+          <h2 class="text-lg font-medium flex">Program</h2>
+
+          <div class="">
+            <p>Podrobnosti o programu zveřejníme v týdnech před svatbou.</p>
+          </div>
+        </div>
+
+        <div class="flex-grow"></div>
+
+        <!-- map -->
+        <div class="mt-8 flex justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d43532.17747270704!2d14.918358964803302!3d49.15490549070972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470cc9fa0975ab0f%3A0x8176794caac38599!2zSG9sZW5za8O9IER2xa9y!5e0!3m2!1sen!2scz!4v1779476162062!5m2!1sen!2scz"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-full md:w-2/3 aspect-2/1"
+          ></iframe>
         </div>
       </div>
     </div>
-
-    <!-- info -->
-    <div class="xl:w-1/2 w-full p-8">
-
-      <details class="mb-2" open>
-        <summary class="text-lg font-medium cursor-pointer">Základní informace</summary>
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-
-        <div class="flex justify-center">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2609.4692538867084!2d14.880371677067869!3d49.1537006798783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470cc9fa0975ab0f%3A0x8176794caac38599!2zSG9sZW5za8O9IER2xa9y!5e0!3m2!1sen!2scz!4v1777645835659!5m2!1sen!2scz"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-2/3 aspect-3/2"></iframe>
-        </div>
-      </details>
-
-      <details class="mb-2" open>
-        <summary class="text-lg font-medium cursor-pointer">Program</summary>
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-      </details>
-
-      <details class="mb-2" open>
-        <summary class="text-lg font-medium cursor-pointer">Jídlo</summary>
-
-        Jídlo na svatbě bude formou bufetu. Pokud máte speciální dietní požadavky, dejte nám vědět ve formuláři.
-      </details>
-
-
-      <details class="mb-2" open>
-        <summary class="text-lg font-medium cursor-pointer">Ubytování</summary>
-
-        <p>
-          Ubytování je možné na místě v <a href="https://holensky-dvur.cz/ubytovani-2/" target="_blank"
-            class="text-primary-600">2-6 lůžkových
-            pokojích</a>.
-        </p>
-
-        <p>Těm, kteří to k nám mají daleko, nabízíme možnost se ubytovat již od pátku 28. 8.</p>
-
-        <!-- <p> -->
-        <!-- Kapacita je velká, ovšem nikoli neomezená, přednostně proto. -->
-        <!-- </p> -->
-
-      </details>
-
-    </div>
-  </div>
-
-  <div class="w-full">
-    <!-- <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeeEVrbajD1-0wPj0RLcqq-FuvA_IWBZNCfciVF4nIMymMTxw/viewform?embedded=true"
-      width="640" height="1094" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-  </div>
-</body>
-
+  </body>
 </html>
-
-<!--
-
-čas
-místo
-ubytování a doprava
-jídlo
-program
-dary
-dress-code
-děti
-
-potvrzení účasti
-
--->
