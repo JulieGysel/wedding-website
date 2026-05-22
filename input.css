@@ -39,7 +39,7 @@
   width: 1.5rem;
   height: 1.5rem;
   display: block;
-  background-image: url("/img/flower.png");
+  background-image: url("./img/flower.png");
   background-size: cover;
   position: relative;
   top: calc(var(--text-lg) + 1.5rem / 3);
@@ -71,7 +71,7 @@
 
 @keyframes spin-90 {
   to {
-    transform: rotate(420deg);
+    transform: rotate(450deg);
   }
 }
 
